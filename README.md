@@ -1,4 +1,4 @@
-[Demo]([https://react.dev](https://react-deep-dive-ab6u2ldfq-francisco-ruedas-projects.vercel.app/)
+[Go to Live](https://react-deep-dive-ab6u2ldfq-francisco-ruedas-projects.vercel.app)
 
 # React Deep Dive
 
