@@ -28,6 +28,16 @@ export default function Navigation() {
         { label: 'Islands Architecture', href: '/concepts/islands' },
       ],
     },
+    {
+      label: 'Advanced Topics',
+      items: [
+        { label: 'Streaming and Suspense', href: '/advanced/streaming' },
+        { label: 'Concurrent Features', href: '/advanced/concurrent' },
+        { label: 'Caching and Data Fetching', href: '/advanced/caching' },
+        { label: 'Performance Benchmarks', href: '/advanced/benchmarks' },
+        { label: 'Interactive Diagrams', href: '/advanced/diagrams' },
+      ],
+    },
   ];
 
   return (
@@ -48,7 +58,7 @@ export default function Navigation() {
                 <button className="font-medium text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   {group.label}
                 </button>
-                <div className="absolute left-0 mt-0 w-56 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
+                <div className="absolute left-0 mt-0 w-64 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
                   {group.items.map((item) => (
                     <Link
                       key={item.href}

@@ -147,3 +147,12 @@
 - [x] Islands Architecture and Resumability
 - [x] Navigation menu updated with Islands Architecture link
 - [x] Home page updated with Islands Architecture card
+
+## Advanced Topics Pages (NEW)
+- [x] Streaming and Suspense page - complete with Traditional vs Streaming SSR, Suspense explanation, renderToPipeableStream, RSC streaming
+- [x] Concurrent Features page - useTransition, useDeferredValue, priority levels, React Scheduler, practical examples
+- [x] Caching and Data Fetching page - evolution of data fetching, Server Components, use hook, fetch caching, patterns
+- [x] Performance Benchmarks page - metrics, rendering mode comparison, optimization techniques, case studies
+- [x] Interactive Diagrams page - CSR, SSR, SSG, Streaming SSR, Islands, Hydration flows with visual representations
+- [x] Navigation menu updated with Advanced Topics section
+- [x] App.tsx updated with all advanced routes

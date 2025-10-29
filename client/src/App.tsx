@@ -14,6 +14,11 @@ import ReactServerComponents from "./pages/rendering/ReactServerComponents";
 import Hydration from "./pages/concepts/Hydration";
 import ReactFiber from "./pages/concepts/ReactFiber";
 import IslandsArchitecture from "./pages/concepts/IslandsArchitecture";
+import StreamingAndSuspense from "./pages/advanced/StreamingAndSuspense";
+import ConcurrentFeatures from "./pages/advanced/ConcurrentFeatures";
+import CachingAndDataFetching from "./pages/advanced/CachingAndDataFetching";
+import PerformanceBenchmarks from "./pages/advanced/PerformanceBenchmarks";
+import InteractiveDiagrams from "./pages/advanced/InteractiveDiagrams";
 
 function Router() {
   return (
@@ -29,7 +34,12 @@ function Router() {
           <Route path={"/rendering/rsc"} component={ReactServerComponents} />
            <Route path={"/concepts/hydration"} component={Hydration} />
           <Route path={"/concepts/fiber"} component={ReactFiber} />
-          <Route path={"/concepts/islands"} component={IslandsArchitecture} />
+           <Route path={"/concepts/islands"} component={IslandsArchitecture} />
+          <Route path={"/advanced/streaming"} component={StreamingAndSuspense} />
+          <Route path={"/advanced/concurrent"} component={ConcurrentFeatures} />
+          <Route path={"/advanced/caching"} component={CachingAndDataFetching} />
+          <Route path={"/advanced/benchmarks"} component={PerformanceBenchmarks} />
+          <Route path={"/advanced/diagrams"} component={InteractiveDiagrams} />
           <Route path={"/404"} component={NotFound} />
           <Route component={NotFound} />
         </Switch>
