@@ -1,3 +1,5 @@
+[Demo]([https://react.dev](https://react-deep-dive-ab6u2ldfq-francisco-ruedas-projects.vercel.app/)
+
 # React Deep Dive
 
 An interactive, mobile-first educational website exploring React's rendering mechanisms, from basic principles to advanced patterns. This comprehensive guide covers rendering strategies, core concepts, and modern optimization techniques with detailed code examples.
