@@ -13,6 +13,7 @@ import IncrementalStaticRegeneration from "./pages/rendering/IncrementalStaticRe
 import ReactServerComponents from "./pages/rendering/ReactServerComponents";
 import Hydration from "./pages/concepts/Hydration";
 import ReactFiber from "./pages/concepts/ReactFiber";
+import IslandsArchitecture from "./pages/concepts/IslandsArchitecture";
 
 function Router() {
   return (
@@ -26,8 +27,9 @@ function Router() {
           <Route path={"/rendering/ssg"} component={StaticSiteGeneration} />
           <Route path={"/rendering/isr"} component={IncrementalStaticRegeneration} />
           <Route path={"/rendering/rsc"} component={ReactServerComponents} />
-          <Route path={"/concepts/hydration"} component={Hydration} />
+           <Route path={"/concepts/hydration"} component={Hydration} />
           <Route path={"/concepts/fiber"} component={ReactFiber} />
+          <Route path={"/concepts/islands"} component={IslandsArchitecture} />
           <Route path={"/404"} component={NotFound} />
           <Route component={NotFound} />
         </Switch>

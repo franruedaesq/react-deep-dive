@@ -25,6 +25,7 @@ export default function Navigation() {
       items: [
         { label: 'Hydration', href: '/concepts/hydration' },
         { label: 'React Fiber', href: '/concepts/fiber' },
+        { label: 'Islands Architecture', href: '/concepts/islands' },
       ],
     },
   ];
@@ -47,7 +48,7 @@ export default function Navigation() {
                 <button className="font-medium text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   {group.label}
                 </button>
-                <div className="absolute left-0 mt-0 w-48 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
+                <div className="absolute left-0 mt-0 w-56 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
                   {group.items.map((item) => (
                     <Link
                       key={item.href}
@@ -79,7 +80,7 @@ export default function Navigation() {
           <div className="md:hidden pb-4 border-t border-slate-200 dark:border-slate-800">
             {navItems.map((group) => (
               <div key={group.label}>
-                <div className="px-4 py-2 font-medium text-slate-900 dark:text-slate-100 text-sm">
+                <div className="px-4 py-2 font-medium text-slate-900 dark:text-slate-100 text-sm border-b border-slate-200 dark:border-slate-700">
                   {group.label}
                 </div>
                 {group.items.map((item) => (

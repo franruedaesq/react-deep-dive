@@ -132,3 +132,18 @@
 - [ ] Print-friendly versions
 - [ ] PDF export functionality
 - [ ] Additional advanced topics (Suspense, Error Boundaries, etc.)
+
+## Islands Architecture Page (NEW)
+- [x] What is Islands Architecture explanation
+- [x] The Islands Metaphor section
+- [x] How Islands Architecture Works section
+- [x] Islands vs Other Rendering Strategies comparison table
+- [x] Building with Islands Architecture example
+- [x] Key Benefits of Islands Architecture
+- [x] Challenges and Considerations section
+- [x] Hydration Strategies for Islands
+- [x] Islands Architecture in Practice (Astro, Fresh, Qwik, Next.js)
+- [x] When to Use Islands Architecture
+- [x] Islands Architecture and Resumability
+- [x] Navigation menu updated with Islands Architecture link
+- [x] Home page updated with Islands Architecture card

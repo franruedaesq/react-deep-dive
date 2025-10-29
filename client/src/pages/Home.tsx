@@ -49,6 +49,11 @@ export default function Home() {
           description: 'The reconciliation algorithm behind React',
           href: '/concepts/fiber',
         },
+        {
+          name: 'Islands Architecture',
+          description: 'Combining static HTML with isolated interactive components',
+          href: '/concepts/islands',
+        },
       ],
     },
   ];
