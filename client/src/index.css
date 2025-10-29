@@ -174,4 +174,174 @@
       max-width: 1280px; /* Standard content width */
     }
   }
+
+  /* Code block styling */
+  code {
+    @apply font-mono text-sm;
+  }
+
+  pre {
+    @apply bg-slate-950 dark:bg-slate-950 rounded-lg p-4 overflow-x-auto border border-slate-800;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  pre code {
+    @apply text-slate-100 dark:text-slate-100;
+    color: #e2e8f0;
+  }
+
+  /* Syntax highlighting for code blocks */
+  .language-javascript,
+  .language-typescript,
+  .language-jsx,
+  .language-tsx {
+    color: #e2e8f0;
+  }
+
+  /* Keyword colors */
+  code .keyword {
+    color: #f472b6;
+  }
+
+  code .string {
+    color: #86efac;
+  }
+
+  code .number {
+    color: #fbbf24;
+  }
+
+  code .function {
+    color: #60a5fa;
+  }
+
+  code .comment {
+    color: #64748b;
+    font-style: italic;
+  }
+
+  /* Content page styling */
+  .content-page {
+    @apply min-h-screen py-8 md:py-12;
+  }
+
+  .page-header {
+    @apply mb-8 md:mb-12;
+  }
+
+  .page-title {
+    @apply text-3xl md:text-4xl font-bold mb-2;
+  }
+
+  .page-subtitle {
+    @apply text-lg text-muted-foreground;
+  }
+
+  .section {
+    @apply mb-12 md:mb-16;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold mb-4 mt-8 first:mt-0;
+  }
+
+  .section-subtitle {
+    @apply text-xl font-semibold mb-3 text-slate-700 dark:text-slate-300;
+  }
+
+  .content-text {
+    @apply text-base leading-relaxed mb-4 text-slate-700 dark:text-slate-300;
+  }
+
+  /* Code example styling */
+  .code-example {
+    @apply bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg p-4 mb-4;
+  }
+
+  .code-example-header {
+    @apply flex justify-between items-center mb-3 pb-3 border-b border-slate-200 dark:border-slate-800;
+  }
+
+  .code-example-title {
+    @apply font-semibold text-sm text-slate-600 dark:text-slate-400;
+  }
+
+  .copy-button {
+    @apply px-2 py-1 text-xs font-medium bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors;
+  }
+
+  /* Comparison table styling */
+  .comparison-table {
+    @apply w-full border-collapse mb-6 overflow-x-auto;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    @apply border border-slate-200 dark:border-slate-700 px-4 py-3 text-left;
+  }
+
+  .comparison-table th {
+    @apply bg-slate-100 dark:bg-slate-800 font-semibold text-slate-900 dark:text-slate-100;
+  }
+
+  .comparison-table td {
+    @apply text-slate-700 dark:text-slate-300;
+  }
+
+  /* Highlight box styling */
+  .highlight-box {
+    @apply bg-blue-50 dark:bg-blue-950 border-l-4 border-blue-500 p-4 rounded mb-6;
+  }
+
+  .highlight-box p {
+    @apply text-blue-900 dark:text-blue-100 m-0;
+  }
+
+  /* Warning box styling */
+  .warning-box {
+    @apply bg-amber-50 dark:bg-amber-950 border-l-4 border-amber-500 p-4 rounded mb-6;
+  }
+
+  .warning-box p {
+    @apply text-amber-900 dark:text-amber-100 m-0;
+  }
+
+  /* Interactive elements */
+  .interactive-demo {
+    @apply bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg p-6 mb-6;
+  }
+
+  .demo-output {
+    @apply bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-700 rounded p-4 font-mono text-sm text-slate-700 dark:text-slate-300;
+  }
+
+  /* List styling */
+  ul, ol {
+    @apply mb-4;
+  }
+
+  li {
+    @apply mb-2;
+  }
+
+  /* Link styling */
+  a {
+    @apply text-blue-600 dark:text-blue-400 hover:underline;
+  }
+
+  /* Responsive typography */
+  @media (max-width: 640px) {
+    .page-title {
+      @apply text-2xl;
+    }
+
+    .section-title {
+      @apply text-xl;
+    }
+
+    .content-text {
+      @apply text-sm;
+    }
+  }
 }

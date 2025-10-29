@@ -5,16 +5,34 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import Navigation from "./components/Navigation";
+import ClientSideRendering from "./pages/rendering/ClientSideRendering";
+import ServerSideRendering from "./pages/rendering/ServerSideRendering";
+import StaticSiteGeneration from "./pages/rendering/StaticSiteGeneration";
+import IncrementalStaticRegeneration from "./pages/rendering/IncrementalStaticRegeneration";
+import ReactServerComponents from "./pages/rendering/ReactServerComponents";
+import Hydration from "./pages/concepts/Hydration";
+import ReactFiber from "./pages/concepts/ReactFiber";
 
 function Router() {
-  // make sure to consider if you need authentication for certain routes
   return (
-    <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
-      <Route component={NotFound} />
-    </Switch>
+    <div className="flex flex-col min-h-screen">
+      <Navigation />
+      <main className="flex-1">
+        <Switch>
+          <Route path={"/"} component={Home} />
+          <Route path={"/rendering/csr"} component={ClientSideRendering} />
+          <Route path={"/rendering/ssr"} component={ServerSideRendering} />
+          <Route path={"/rendering/ssg"} component={StaticSiteGeneration} />
+          <Route path={"/rendering/isr"} component={IncrementalStaticRegeneration} />
+          <Route path={"/rendering/rsc"} component={ReactServerComponents} />
+          <Route path={"/concepts/hydration"} component={Hydration} />
+          <Route path={"/concepts/fiber"} component={ReactFiber} />
+          <Route path={"/404"} component={NotFound} />
+          <Route component={NotFound} />
+        </Switch>
+      </main>
+    </div>
   );
 }
 
