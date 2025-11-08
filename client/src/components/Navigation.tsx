@@ -34,6 +34,7 @@ export default function Navigation() {
       label: 'Advanced Topics',
       items: [
         { label: 'Streaming and Suspense', href: '/advanced/streaming' },
+        { label: 'Concurrent Mode', href: '/advanced/concurrent-mode' },
         { label: 'Concurrent Features', href: '/advanced/concurrent' },
         { label: 'Caching and Data Fetching', href: '/advanced/caching' },
         { label: 'Performance Benchmarks', href: '/advanced/benchmarks' },
