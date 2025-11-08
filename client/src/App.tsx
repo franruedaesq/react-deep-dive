@@ -14,6 +14,7 @@ import ReactServerComponents from "./pages/rendering/ReactServerComponents";
 import Hydration from "./pages/concepts/Hydration";
 import ReactFiber from "./pages/concepts/ReactFiber";
 import IslandsArchitecture from "./pages/concepts/IslandsArchitecture";
+import ReactReconciliation from "./pages/concepts/ReactReconciliation";
 import StreamingAndSuspense from "./pages/advanced/StreamingAndSuspense";
 import ConcurrentFeatures from "./pages/advanced/ConcurrentFeatures";
 import CachingAndDataFetching from "./pages/advanced/CachingAndDataFetching";
@@ -32,9 +33,10 @@ function Router() {
           <Route path={"/rendering/ssg"} component={StaticSiteGeneration} />
           <Route path={"/rendering/isr"} component={IncrementalStaticRegeneration} />
           <Route path={"/rendering/rsc"} component={ReactServerComponents} />
-           <Route path={"/concepts/hydration"} component={Hydration} />
+          <Route path={"/concepts/hydration"} component={Hydration} />
           <Route path={"/concepts/fiber"} component={ReactFiber} />
-           <Route path={"/concepts/islands"} component={IslandsArchitecture} />
+          <Route path={"/concepts/reconciliation"} component={ReactReconciliation} />
+          <Route path={"/concepts/islands"} component={IslandsArchitecture} />
           <Route path={"/advanced/streaming"} component={StreamingAndSuspense} />
           <Route path={"/advanced/concurrent"} component={ConcurrentFeatures} />
           <Route path={"/advanced/caching"} component={CachingAndDataFetching} />

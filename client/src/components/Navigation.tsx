@@ -25,6 +25,7 @@ export default function Navigation() {
       items: [
         { label: 'Hydration', href: '/concepts/hydration' },
         { label: 'React Fiber', href: '/concepts/fiber' },
+        { label: 'React Reconciliation', href: '/concepts/reconciliation' },
         { label: 'Islands Architecture', href: '/concepts/islands' },
       ],
     },
