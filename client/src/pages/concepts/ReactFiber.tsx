@@ -1,4 +1,5 @@
 import CodeExample from '@/components/CodeExample';
+import { Link } from 'wouter';
 
 export default function ReactFiber() {
   return (
@@ -244,6 +245,22 @@ scheduleWork(fiber);
             <li><strong>Suspense support:</strong> Ability to pause rendering while waiting for data</li>
             <li><strong>Improved performance:</strong> More efficient DOM updates and animations</li>
           </ul>
+        </div>
+
+        <div className="section">
+          <div className="p-6 rounded-lg bg-blue-50 dark:bg-slate-900/60 border border-blue-200 dark:border-blue-500/40">
+            <h2 className="section-title mb-3">Want to Go Deeper?</h2>
+            <p className="content-text mb-4">
+              Explore the historical context, scheduler internals, and concurrency primitives that make Fiber tick in our deep
+              dive article.
+            </p>
+            <Link
+              href="/concepts/fiber-under-the-hood"
+              className="inline-flex items-center px-4 py-2 rounded-md bg-blue-600 text-white font-medium shadow-sm hover:bg-blue-500 transition-colors"
+            >
+              Read &quot;React Fiber Under the Hood&quot;
+            </Link>
+          </div>
         </div>
 
         <div className="section">
