@@ -13,6 +13,7 @@ import IncrementalStaticRegeneration from "./pages/rendering/IncrementalStaticRe
 import ReactServerComponents from "./pages/rendering/ReactServerComponents";
 import Hydration from "./pages/concepts/Hydration";
 import ReactFiber from "./pages/concepts/ReactFiber";
+import ReactFiberUnderTheHood from "./pages/concepts/ReactFiberUnderTheHood";
 import IslandsArchitecture from "./pages/concepts/IslandsArchitecture";
 import ReactReconciliation from "./pages/concepts/ReactReconciliation";
 import FiberArchitecture from "./pages/concepts/FiberArchitecture";
@@ -36,6 +37,7 @@ function Router() {
           <Route path={"/rendering/rsc"} component={ReactServerComponents} />
           <Route path={"/concepts/hydration"} component={Hydration} />
           <Route path={"/concepts/fiber"} component={ReactFiber} />
+          <Route path={"/concepts/fiber-under-the-hood"} component={ReactFiberUnderTheHood} />
           <Route path={"/concepts/reconciliation"} component={ReactReconciliation} />
           <Route path={"/concepts/islands"} component={IslandsArchitecture} />
           <Route path={"/concepts/fiber-architecture"} component={FiberArchitecture} />
