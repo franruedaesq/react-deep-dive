@@ -18,6 +18,7 @@ import ReactReconciliation from "./pages/concepts/ReactReconciliation";
 import FiberArchitecture from "./pages/concepts/FiberArchitecture";
 import StreamingAndSuspense from "./pages/advanced/StreamingAndSuspense";
 import ConcurrentFeatures from "./pages/advanced/ConcurrentFeatures";
+import ConcurrentMode from "./pages/advanced/ConcurrentMode";
 import CachingAndDataFetching from "./pages/advanced/CachingAndDataFetching";
 import PerformanceBenchmarks from "./pages/advanced/PerformanceBenchmarks";
 import InteractiveDiagrams from "./pages/advanced/InteractiveDiagrams";
@@ -41,6 +42,7 @@ function Router() {
           <Route path={"/concepts/fiber-architecture"} component={FiberArchitecture} />
           <Route path={"/advanced/streaming"} component={StreamingAndSuspense} />
           <Route path={"/advanced/concurrent"} component={ConcurrentFeatures} />
+          <Route path={"/advanced/concurrent-mode"} component={ConcurrentMode} />
           <Route path={"/advanced/caching"} component={CachingAndDataFetching} />
           <Route path={"/advanced/benchmarks"} component={PerformanceBenchmarks} />
           <Route path={"/advanced/diagrams"} component={InteractiveDiagrams} />
